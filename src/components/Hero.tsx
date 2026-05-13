@@ -25,7 +25,8 @@ export default function Hero() {
             alt="Africdsa Logo" 
             width={180} 
             height={60} 
-            className="object-contain"
+            style={{ height: 'auto', width: 'auto' }}
+            className="object-contain mix-blend-multiply"
           />
           <div className="hidden md:flex gap-6 text-slate-800 font-medium">
             <Link href="/" className="hover:text-[#FF6B00] transition">Home</Link>

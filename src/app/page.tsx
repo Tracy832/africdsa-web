@@ -1,12 +1,13 @@
 import Hero from "@/components/Hero";
+import Audience from "@/components/Audience";
+import Courses from "@/components/Courses";
 
 export default function Home() {
   return (
     <main>
-      {/* Our custom Hero section */}
       <Hero />
-      
-      {/* You can add more sections here later, like Features or Partners */}
+      <Audience />
+      <Courses />
     </main>
   );
 }
