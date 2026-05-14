@@ -2,7 +2,8 @@ import {
   GraduationCap, 
   TrendingUp, 
   Briefcase, 
-  Building2 
+  Building2,
+  HelpCircle
 } from 'lucide-react';
 
 export default function LearningPath() {
@@ -49,7 +50,7 @@ export default function LearningPath() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {paths.map((path, index) => (
             <div 
               key={index} 
@@ -71,6 +72,14 @@ export default function LearningPath() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* New CTA Button Section */}
+        <div className="flex justify-center">
+          <button className="group flex items-center gap-3 px-8 py-4 bg-white border-2 border-[#040474] text-[#040474] font-bold rounded-xl hover:bg-[#040474] hover:text-white transition-all duration-300 shadow-md">
+            <HelpCircle size={20} className="group-hover:rotate-12 transition-transform" />
+            Help Me Choose a Program
+          </button>
         </div>
       </div>
     </section>
